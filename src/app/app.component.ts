@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Angular App';
+
+  post = {
+    title: 'Harry Potter',
+    isFavorite: true
+  };
+
+  handler(clickState) {
+    console.log('the favorate star is ' + clickState);
+
+  }
 }
